@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <title>A Shopping Cart</title>
+    <style>
+        .add {
+            background-color: green;
+            color: white;
+        }
+        .remove {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="productList"></div>
+            <h3>Product List:</h3>
+                <table>
+                    <thead>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iphone</td>
+                            <td>75000</td>
+                            <td><button class="add product1">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ipad</td>
+                            <td>90000</td>
+                            <td><button class="add product2">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Galaxy S2</td>
+                            <td>80000</td>
+                            <td><button class="add product3">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>AirPod</td>
+                            <td>27000</td>
+                            <td><button class="add product4">Add to Cart</button></td>
+                        </tr>
+                        <tr>
+                            <td>Apple MacBook Air</td>
+                            <td>100000</td>
+                            <td><button class="add product5">Add to Cart</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <div class="container">
+        <div id="cart"></div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
