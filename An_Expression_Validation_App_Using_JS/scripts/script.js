@@ -1,6 +1,7 @@
 let menu = document.querySelector('#menu');
 let inputForm = document.querySelector('#input-form');
 
+
 menu.addEventListener("change", showInputField);
 
 
@@ -14,6 +15,12 @@ function showInputField(e) {
         `
     let inputSubmit = document.querySelector('#input-submit');
     let selectedExpression = e.target.value;
+    getInput(inputSubmit, selectedExpression);
+    e.preventDefault();
+}
+
+
+function getInput(inputSubmit, selectedExpression) {
     inputSubmit.addEventListener('click', (e) => {
         let inputBox = document.querySelector('#input-box');
         let inputText = inputBox.value;
@@ -28,7 +35,6 @@ function showInputField(e) {
         }
         e.preventDefault();
     });
-    e.preventDefault();
 }
 
 function validate(inputText, selectedExpression) {
