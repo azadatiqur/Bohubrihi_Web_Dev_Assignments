@@ -24,8 +24,6 @@ function getInput(inputSubmit, selectedExpression) {
     inputSubmit.addEventListener('click', (e) => {
         let inputBox = document.querySelector('#input-box');
         let inputText = inputBox.value;
-        //console.log(inputText);
-        //console.log(selectedExpression);
         if(inputText == "") {
             alert("Input must be filled!");
         }
